@@ -1,0 +1,22 @@
+h1 {
+    font-size: 40px;
+    font-style: normal;
+
+}
+
+h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+body {
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: circle;
+}
+
+table, th, td {
+    text-align: center;
+    border: 2px solid rgb(140, 90, 100);
+}
