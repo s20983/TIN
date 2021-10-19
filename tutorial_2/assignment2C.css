@@ -1,0 +1,72 @@
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png');
+    background-size: 10%;
+    background-color: rgb(255, 255, 255, 0.75);
+    background-blend-mode: overlay;
+    font-family: Garamond, serif;
+}
+
+main {
+    margin-top: 5%; margin-bottom: 5%;
+}
+
+img.header {
+    margin-left: 10%; margin-right: 10%;
+    width: 80%;
+    border: 5px solid whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2 {
+    margin-left: 10%;
+    font-size: x-large;
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    line-height: 0.85;
+    text-shadow:
+    2px 2px rgb(40, 64, 124),
+    2px -2px rgb(40, 64, 124),
+    -2px 2px rgb(40, 64, 124),
+    -2px -2px rgb(40, 64, 124);
+}
+
+article {
+    color: whitesmoke;
+    margin-left: 10%; margin-right: 10%;
+    background-color: rgb(40, 64, 124);
+    border: 5px solid whitesmoke;
+}
+
+section {   
+    margin-left: 20%; margin-right: 10%;
+    background-color: rgb(18, 31, 65);
+    text-align: justify;
+    border: 5px dotted whitesmoke;
+}
+
+p {
+    margin: 20px;
+}
+
+a {
+    color: rgb(255, 221, 67);
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+footer {
+    color: whitesmoke;
+    margin-left: 10%; margin-right: 10%;
+    background-color: rgb(40, 64, 124);
+    border: 5px solid whitesmoke;
+
+    text-align: right;
+}

@@ -1,0 +1,10 @@
+form {
+    font-size: 40px;
+    font-style: normal;
+}
+
+
+//TODO Define colors for field labels (mandatory fields should have different color from other fields)
+field label {
+
+}
