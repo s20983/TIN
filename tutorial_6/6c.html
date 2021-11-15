@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script>
+    function validate() {
+        var email = document.getElementById("mail").value;
+        var number = document.getElementById("tnumb").value;
+     
+        if (isNaN(number)) {
+            document.getElementById("tnumb").style.color = "red";
+        }
+     
+        else {
+            document.getElementById("tnumb").style.color = "green";
+        }
+     
+        if (validateEmail(email)) {
+            document.getElementById("mail").style.color = "green";
+        }
+     
+        else {
+            document.getElementById("mail").style.color = "red";
+        }
+
+    }
+ 
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+    </script>
+</head>
+<body>
+    Ticket number:
+        <input id="tnumb" type="text" name="number" value="">
+        <br>
+    Adress e-mail:
+        <input id="mail" type="text" name="email" value="">
+        <br>
+    <button onclick="validate()">Check if correct</button>
+</body>
+</html> 

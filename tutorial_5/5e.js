@@ -37,3 +37,5 @@ function createStudent(firstname, lastname, id) {
     student.id = id;
     return student;
 }
+
+console.log(createStudent("Magdalena", "Zembrzuska", "s20983"));

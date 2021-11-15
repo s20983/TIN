@@ -8,12 +8,13 @@ function Student(firstname, lastname, id, gradesarray) {
 }
 
 function printStudent(){
-    let num = 0;
     let sum = 0;
-        for(x in this.gradesarray) {
-        sum = sum+x;
-        num++;
+        for(let i =0; i<gradesarray.length; i++) {
+        sum = sum+parseInt(gradesarray[i]);
     }
-    console.log(this.firstname + " " + this.lastname + " has grade average of " + sum/num);
+    console.log(this.firstname + " " + this.lastname + " has grade average of " + (sum/(gradesarray.length)));
 }
+  
+var s = Student("Magdalena", "Zembrzuska", "s20983", [3,4,5,5,5]);
+printStudent(s);
   

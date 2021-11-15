@@ -7,13 +7,11 @@ var Student = {
     gradesarray,
     courselist,
     get averageGrade() {
-        let num = 0;
         let sum = 0;
-        for(x in this.gradesarray) {
-            sum = sum+x;
-            num++;
-        }
-        return sum/num; 
+        for(let i =0; i<gradesarray.length; i++) {
+        sum = sum+parseInt(gradesarray[i]);
+    }
+        return sum/gradesarray.length; 
     },
     get fullName() {
         return this.firstname + " " + this.lastname;
@@ -34,3 +32,5 @@ function createStudent(firstname, lastname, id) {
     student.id = id;
     return student;
 }
+
+console.log(createStudent("Magdalena", "Zembrzuska", "s20983"));

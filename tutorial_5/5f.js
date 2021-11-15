@@ -37,3 +37,5 @@ class Student extends Person{
         return sum/num; 
     }
 }
+
+console.log(createStudent("Magdalena", "Zembrzuska", "s20983"));

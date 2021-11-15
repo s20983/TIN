@@ -1,0 +1,53 @@
+<html>
+<style>
+    td, th {
+        border: 1px solid black;
+        text-align: middle;
+        padding: 5px;
+    }
+</style>
+<head>
+    <script>function insertNewRow() {
+        var table = document.getElementById("table");
+        var row = table.insertRow(table.rows.length);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        
+        var nok = parseFloat(document.getElementById("km").value);
+        var fc = parseFloat(document.getElementById("fuel").value);
+        var ep = nok/100*fc*6.1;
+        
+        if (document.getElementById("km").value.length != 0 && document.getElementById("fuel").value.length != 0) {
+        cell1.innerHTML = nok;
+        cell2.innerHTML = fc;
+        cell3.innerHTML = ep;
+        }
+    } 
+    </script>
+</head>
+
+<body>
+<table id = "table">
+    <tr>
+        <th>number of kilometers</th>
+        <th>fuel consumption <br> (in liters per 100km)</th>
+        <th>estimated price <br> (in PLN)</th>
+    </tr>
+    <tr>
+        <td>200</td>
+        <td>8</td>
+        <td>97.6</td>
+    </tr>
+</table>
+
+<br>
+    number of kilometers: 
+    <input id="km" type="text" value="" maxlength="8">
+        <br>
+    fuel consumption (per 100km): 
+    <input id="fuel" type="text" value="" maxlength="2">
+        <br>
+    <button onclick="insertNewRow()">Count the price</button>
+</body>
+</html> 

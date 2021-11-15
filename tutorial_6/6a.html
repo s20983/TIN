@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    Enter temperature in Celsius:
+    <input id="cTemp" type="text" value="">
+    <button id="cButton">Convert to Fahrenheit</button>
+    <p id="cResult"> </p>
+
+    Enter temperature in Fahrenheit:
+    <input id="fTemp" type="text" value="">
+    <button id="fButton">Convert to Celsius</button>
+    <p id="fResult"> </p>
+
+<script>
+    document.getElementById("cButton").addEventListener("click", function () {
+        var ctemp = parseFloat(document.getElementById("cTemp").value);
+        var cres = ((ctemp*9/5)+32).toFixed(2);
+        document.getElementById("cResult").innerHTML = (cres);
+ 	});
+    document.getElementById("fButton").addEventListener("click", function () {
+        var ftemp = parseFloat(document.getElementById("fTemp").value);
+        var fres = ((ftemp-32)*5/9).toFixed(2);
+        document.getElementById("fResult").innerHTML = (fres);
+    }); 
+ </script>
+ </body>
+ </html>
